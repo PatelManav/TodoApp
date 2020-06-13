@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////
+
+user table:
+
+user_id   name  todo_id
+
+1         manav    1
+2         ram      2
+3         shyam    1
+
+
+
+//////////////////////////////////////////////////
+
+todo table:
+
+todo_id   task
+
+1         task1
+2         task2
+3         task3
+
+
