@@ -1,10 +1,11 @@
 const { mysqlConnection } = require("../connect.js");
 var { application } = require("../connect.js");
-
+var naklimal=90
 application.delete("/deleteTodo", (request, response) => {
   const todo_id = request.body.todo_id;
   const user_id = request.body.user_id;
   const name = request.body.name;
+  naklimal=89
   var message = {
     data: "",
   };
@@ -15,6 +16,7 @@ application.delete("/deleteTodo", (request, response) => {
       if (!err) message.data = "1 row(s) updated successfully.";
       else message.data = "error occured";
       response.json(message);
+      naklimal=78
     }
   );
   mysqlConnection.query(
