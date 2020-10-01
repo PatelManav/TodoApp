@@ -10,7 +10,7 @@ application.delete("/deleteUser", (request, response) => {
     "DELETE FROM user_1 WHERE user_id = ?",
     [user_id],
     (err, rows, field) => {
-      if (!err) message.data = "1 row(s) deleted successfully.";
+      if (!err) message.data = "1 row(s) has been deleted successfully.";
       else message.data = "error occured";
       response.json(message);
     }

@@ -12,7 +12,7 @@ application.post("/createUser", (request, response) => {
     "INSERT INTO user_1 VALUES(?,?,?)",
     [user_id, name, todo_id],
     (err, rows, field) => {
-      if (!err) message.data = "Row inserted successfully.";
+      if (!err) message.data = "Row has been inserted successfully.";
       else message.data = "error occured";
       response.json(message);
     }

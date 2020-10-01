@@ -12,7 +12,7 @@ application.put("/updateUser", (request, response) => {
     "UPDATE user_1 SET todo_id = ?, name = ? WHERE user_id = ?",
     [todo_id, name, user_id],
     (err, rows, field) => {
-      if (!err) message.data = "1 row(s) updated successfully.";
+      if (!err) message.data = "1 row(s) have been updated successfully.";
       else message.data = "error occured";
       response.json(message);
     }
